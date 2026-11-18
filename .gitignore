@@ -1,0 +1,38 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+runs/
+checkpoints/
+data/
+eval/data/
+eval/results/
+*.log
+.env
+frontend/node_modules/
+
+# IDE & Editor artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test & coverage artifacts
+.coverage
+htmlcov/
+
+# Temporary and partial downloads
+*.part
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Kaggle notebook downloads (extract models into checkpoints/, eval outputs into eval/results/)
+/results/
+/satquery-vlm-lora/
+*.zip
+__results___files/
+__huggingface_repos__.json
+__notebook__.ipynb

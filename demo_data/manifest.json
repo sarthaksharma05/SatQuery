@@ -1,0 +1,92 @@
+{
+  "note": "Synthetic Sentinel-1/2 scenes with known ground truth (satquery/demo/synth.py).",
+  "scenarios": [
+    {
+      "id": "single_s2",
+      "title": "Single Sentinel-2 scene (12 bands)",
+      "files": [
+        "s2_2024-06-01.tif"
+      ],
+      "queries": [
+        "Is there water in this image?",
+        "What type of land cover dominates this scene?"
+      ],
+      "hidden": true
+    },
+    {
+      "id": "single_s1",
+      "title": "Single Sentinel-1 SAR scene (VV/VH)",
+      "files": [
+        "s1_2024-06-02.tif"
+      ],
+      "queries": [
+        "Is there any water in this image?",
+        "Is this a rural or an urban area?"
+      ],
+      "hidden": true
+    },
+    {
+      "id": "cross_modal",
+      "title": "Cross-modal: cloudy Sentinel-2 + Sentinel-1",
+      "files": [
+        "s2_cloudy_2024-06-01.tif",
+        "s1_2024-06-02.tif"
+      ],
+      "queries": [
+        "Use the optical and SAR images together to identify built-up and water-covered regions."
+      ],
+      "hidden": true
+    },
+    {
+      "id": "bitemporal_s2",
+      "title": "Bi-temporal Sentinel-2 (2024 \u2192 2025)",
+      "files": [
+        "s2_2024-06-01.tif",
+        "s2_2025-06-05.tif"
+      ],
+      "queries": [
+        "What changed between these two dates, and where did the change occur?",
+        "Did anything change between these two dates?"
+      ],
+      "hidden": true
+    },
+    {
+      "id": "bitemporal_s1",
+      "title": "Bi-temporal Sentinel-1 (2024 \u2192 2025)",
+      "files": [
+        "s1_2024-06-02.tif",
+        "s1_2025-06-06.tif"
+      ],
+      "queries": [
+        "What changed between these two dates, and where did the change occur?",
+        "Did anything change between these two dates?"
+      ],
+      "hidden": true
+    },
+    {
+      "id": "bitemporal_real",
+      "title": "Real Sentinel-2 bi-temporal pair (2018-01-03 -> 2026-11-17)",
+      "files": [
+        "real_bitemporal_before.tif",
+        "real_bitemporal_after.tif"
+      ],
+      "queries": [
+        "Describe this image.",
+        "What changed between these two dates, and where did the change occur?",
+        "Did anything change between these two dates?"
+      ]
+    },
+    {
+      "id": "real_navi_single",
+      "title": "Real Navi Mumbai scene (Sentinel-2, 2026)",
+      "files": [
+        "real_bitemporal_after.tif"
+      ],
+      "queries": [
+        "Describe this scene.",
+        "Is there water in this image?",
+        "What type of land cover dominates this scene?"
+      ]
+    }
+  ]
+}

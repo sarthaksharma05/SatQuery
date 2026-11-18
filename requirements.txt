@@ -1,0 +1,14 @@
+# SatQuery AI - runtime + tests (CPU is enough).
+numpy>=2.4
+opencv-python-headless>=4.11
+pillow>=13.0
+matplotlib>=3.11
+reportlab>=5.1
+rasterio>=1.4.4
+fastapi>=0.162
+uvicorn>=0.54
+python-multipart>=0.0.33   # required by FastAPI for image uploads
+torch>=2.15
+torchvision>=0.29
+httpx>=0.28                # used by the test client
+pytest>=9.2                # test suite (python run.py --test)
